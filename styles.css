@@ -1,0 +1,73 @@
+.set {
+    background-color: black;
+    border: 1px solid gold;
+    margin: 10px;
+    padding: 10px;
+}
+
+h1 {
+    color: gold;
+    text-align: center;
+}
+
+li {
+    width: 100px;
+    height: 30px;
+    background-color: gold;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    list-style-type: none;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+  
+}
+
+li:hover {
+    background-color: green;
+    transition: background-color 0.3s;
+}
+
+.set-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Desktop and larger screens */
+@media screen and (min-width: 1024px) {
+    .set {
+        flex: 1;
+    }
+    
+    #Cdiv {
+        order: 2;
+    }
+    
+    #Ddiv {
+        order: 3;
+    }
+    
+    #Bdiv {
+        order: 4;
+    }
+}
+
+/* Tablet screens */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    .set {
+        flex-basis: 50%;
+    }
+    
+
+}
+
+/* Mobile screens */
+@media screen and (max-width: 767px) {
+    .set {
+        flex-basis: 100%;
+    }
+}
